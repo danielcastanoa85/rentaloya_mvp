@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star } from 'lucide-react';
+import { Star, ShieldCheck, MapPin, UserCheck } from 'lucide-react';
 
 const testimonials = [
   {
@@ -29,23 +29,45 @@ const SocialProof: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           
           <div className="lg:w-1/3">
-             <h2 className="text-3xl font-extrabold text-gray-900 mb-4">
+             <h2 className="text-3xl font-extrabold text-gray-900 mb-8">
               Miles de Rentas Seguras, <br/>
               <span className="text-indigo-600">Cerca de Ti.</span>
              </h2>
-             <div className="flex items-end gap-2 mb-6">
-                <span className="text-6xl font-black text-gray-900">4.8k</span>
-                <span className="text-gray-500 font-medium mb-2">Activos Rentados Exitosamente</span>
-             </div>
-             <div className="flex -space-x-3">
-               {[1,2,3,4].map(i => (
-                 <img key={i} className="w-10 h-10 rounded-full border-2 border-white" src={`https://picsum.photos/seed/u${i}/50/50`} alt="user" />
-               ))}
-               <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-xs font-bold text-gray-600 border-2 border-white">+200</div>
+             
+             <div className="space-y-6">
+               <div className="flex items-start gap-4">
+                 <div className="p-3 bg-indigo-50 rounded-xl text-indigo-600">
+                   <UserCheck className="w-6 h-6" />
+                 </div>
+                 <div>
+                   <h3 className="text-xl font-bold text-gray-900">Verificación 100%</h3>
+                   <p className="text-gray-500 font-medium">Identidad validada</p>
+                 </div>
+               </div>
+
+               <div className="flex items-start gap-4">
+                 <div className="p-3 bg-emerald-50 rounded-xl text-emerald-600">
+                   <MapPin className="w-6 h-6" />
+                 </div>
+                 <div>
+                   <h3 className="text-xl font-bold text-gray-900">Soporte Local</h3>
+                   <p className="text-gray-500 font-medium">Atención en Bello y Medellín</p>
+                 </div>
+               </div>
+
+               <div className="flex items-start gap-4">
+                 <div className="p-3 bg-indigo-50 rounded-xl text-indigo-600">
+                   <ShieldCheck className="w-6 h-6" />
+                 </div>
+                 <div>
+                   <h3 className="text-xl font-bold text-gray-900">Seguridad Total</h3>
+                   <p className="text-gray-500 font-medium">Tus artículos protegidos</p>
+                 </div>
+               </div>
              </div>
           </div>
 
-          <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 lg:mt-0">
             {testimonials.map((t, i) => (
               <div key={i} className="bg-slate-50 p-6 rounded-3xl border border-gray-100">
                 <div className="flex gap-1 mb-4">

@@ -20,8 +20,7 @@ const Hero: React.FC = () => {
             </h1>
             
             <p className="text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              La plataforma donde encuentras lo que buscas y ganas con lo que tienes. 
-              Ahorra dinero y reduce el desperdicio conectando con tu comunidad.
+              La plataforma donde encuentras lo que buscas y ganas con lo que tienes.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">

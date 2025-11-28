@@ -36,6 +36,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-sm text-gray-600">
               <li><a href="#" className="hover:text-indigo-600">Centro de Ayuda</a></li>
               <li><a href="#" className="hover:text-indigo-600">Políticas de Garantía</a></li>
+              <li><a href="https://tally.so/r/q45WQ5" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600">Verificar mi Identidad</a></li>
               <li><a href="#" className="hover:text-indigo-600">Términos y Condiciones</a></li>
               <li><a href="#" className="hover:text-indigo-600">Contacto</a></li>
             </ul>

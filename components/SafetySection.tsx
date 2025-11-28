@@ -13,6 +13,16 @@ const SafetySection: React.FC = () => {
           <p className="text-indigo-200 max-w-2xl mx-auto text-lg">
             Hemos construido Rentaloya sobre una base de confianza radical. Cada interacción está protegida.
           </p>
+          <div className="mt-4">
+            <a 
+              href="https://tally.so/r/q45WQ5" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-emerald-400 font-bold hover:text-emerald-300 transition-colors underline decoration-2 underline-offset-4"
+            >
+              ¿Nuevo usuario? Valídate aquí
+            </a>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Search, Menu, X, User } from 'lucide-react';
+import { Search, Menu, X, User, ShieldCheck } from 'lucide-react';
 import { openWhatsApp } from '../utils';
 
 interface NavbarProps {
@@ -59,6 +59,14 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
             >
               Ingresar
             </button>
+            <a 
+              href="https://tally.so/r/q45WQ5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center border-2 border-indigo-600 text-indigo-700 bg-white hover:bg-indigo-50 px-5 py-2 rounded-full font-bold shadow-sm transition-all hover:-translate-y-0.5"
+            >
+              🛡️ Validar Identidad
+            </a>
             <button 
               onClick={() => openWhatsApp("Hola Rentaloya, quiero publicar un activo.")}
               className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-full font-bold shadow-lg shadow-indigo-200 transition-transform transform hover:-translate-y-0.5 active:translate-y-0"
@@ -100,6 +108,15 @@ const Navbar: React.FC<NavbarProps> = ({ onSearch }) => {
             <User size={18} />
             <span>Ingresar</span>
           </button>
+          <a 
+            href="https://tally.so/r/q45WQ5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-2 text-indigo-700 font-bold p-2 rounded-lg hover:bg-indigo-50 w-full text-left border border-indigo-100"
+          >
+            <ShieldCheck size={18} />
+            <span>Validar Identidad</span>
+          </a>
           <button 
             onClick={() => openWhatsApp("Hola Rentaloya, quiero publicar un activo.")}
             className="w-full bg-indigo-600 text-white py-3 rounded-xl font-bold"

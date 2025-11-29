@@ -20,16 +20,16 @@ const PublishPreview: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-24 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
+    <section className="py-16 lg:py-24 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           
           <div className="order-2 lg:order-1 relative h-[500px] flex items-center justify-center">
             {/* Abstract Background */}
             <div className="absolute inset-0 bg-indigo-50 rounded-[40px] transform rotate-3 scale-90 -z-10"></div>
             
             {/* Stacked Cards UI Simulation */}
-            <div className="relative w-full max-w-md">
+            <div className="relative w-full max-w-md mx-auto">
               
               {/* Card 3 (Bottom) */}
               <div 

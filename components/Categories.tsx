@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, FileText } from 'lucide-react';
 
 const categories = [
   {
@@ -28,6 +28,20 @@ const Categories: React.FC = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Terms and Conditions Button - Placed Top Center */}
+        <div className="flex justify-center mb-16">
+          <a 
+            href="https://drive.google.com/file/d/1n1Qsw7csmN9Cp_muGqzO7M9uHWMYI4T5/view?usp=drive_link" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-6 py-2.5 rounded-full border border-gray-300 bg-white text-gray-600 font-bold text-sm hover:bg-gray-50 hover:text-indigo-600 hover:border-indigo-300 transition-all shadow-sm group"
+          >
+            <FileText className="w-4 h-4 mr-2 text-gray-400 group-hover:text-indigo-500" />
+            📄 Términos y Condiciones de Uso Rentaloya
+          </a>
+        </div>
+
         <div className="flex justify-between items-end mb-10">
           <h2 className="text-3xl font-extrabold text-gray-900">Explora nuestras Categorías</h2>
           <a href="#" className="text-indigo-600 font-semibold hover:text-indigo-800 flex items-center transition-colors">

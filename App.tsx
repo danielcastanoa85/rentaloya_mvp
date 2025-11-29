@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import SavingsComparison from './components/SavingsComparison';
 import LiveMarketplace from './components/LiveMarketplace';
+import TrustGuarantee from './components/TrustGuarantee';
 import SocialProof from './components/SocialProof';
 import Features from './components/Features';
 import HowItWorks from './components/HowItWorks';
@@ -18,7 +20,9 @@ const App: React.FC = () => {
       <Navbar onSearch={setSearchTerm} />
       <main>
         <Hero />
+        <SavingsComparison />
         <LiveMarketplace searchTerm={searchTerm} />
+        <TrustGuarantee />
         <SocialProof />
         <Features />
         <HowItWorks />

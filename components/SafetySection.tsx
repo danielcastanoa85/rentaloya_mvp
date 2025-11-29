@@ -9,9 +9,9 @@ const SafetySection: React.FC = () => {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-indigo-900 mb-6">
             <Shield className="w-8 h-8 text-emerald-400" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">Tu Inversión Está Segura</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">¿Quién usa tus cosas? Solo Vecinos Filtrados.</h2>
           <p className="text-indigo-200 max-w-2xl mx-auto text-lg">
-            Hemos construido Rentaloya sobre una base de confianza radical. Cada interacción está protegida.
+            En Bello la confianza se gana. Usamos tecnología biométrica. Si no pasan el filtro de seguridad, no entran al barrio Rentaloya.
           </p>
           <div className="mt-4">
             <a 

@@ -20,13 +20,55 @@ const PublishPreview: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-16 lg:py-24 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
+    <section className="py-8 lg:py-20 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-16 items-center">
           
-          <div className="order-2 lg:order-1 relative h-[500px] flex items-center justify-center">
+          {/* Text Column (Order 1 on Mobile) */}
+          <div className="order-1 lg:order-2">
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4">
+              Publicar es así de simple.
+            </h2>
+            <p className="text-lg text-gray-600 mb-6">
+              Nuestro asistente inteligente te ayuda a categorizar, valorar y proteger tu activo en menos de 2 minutos.
+            </p>
+            
+            <div className="space-y-4">
+              <div className={`flex items-start transition-opacity duration-500 ${activeStep === 0 ? 'opacity-100' : 'opacity-40'}`}>
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold mr-4">1</div>
+                <div>
+                  <h4 className="font-bold text-gray-900">Categorización Instantánea</h4>
+                  <p className="text-gray-500 text-sm">Selecciona categoría y nombre. Nosotros hacemos el resto.</p>
+                </div>
+              </div>
+               <div className={`flex items-start transition-opacity duration-500 ${activeStep === 1 ? 'opacity-100' : 'opacity-40'}`}>
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold mr-4">2</div>
+                <div>
+                  <h4 className="font-bold text-gray-900">Registro Visual</h4>
+                  <p className="text-gray-500 text-sm">Sube fotos para garantizar el estado del producto antes de la renta.</p>
+                </div>
+              </div>
+               <div className={`flex items-start transition-opacity duration-500 ${activeStep === 2 ? 'opacity-100' : 'opacity-40'}`}>
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold mr-4">3</div>
+                <div>
+                  <h4 className="font-bold text-gray-900">Precio Sugerido</h4>
+                  <p className="text-gray-500 text-sm">Nuestro algoritmo te sugiere el mejor precio para rentar rápido.</p>
+                </div>
+              </div>
+            </div>
+
+            <button 
+              onClick={() => openWhatsApp("Hola, quiero probar el asistente de publicación de activos.")}
+              className="mt-6 px-8 py-3 bg-gray-900 text-white font-bold rounded-full hover:bg-gray-800 transition-colors"
+            >
+              Pruébalo ahora
+            </button>
+          </div>
+
+          {/* Visual Column (Order 2 on Mobile) */}
+          <div className="order-2 lg:order-1 relative h-[400px] lg:h-[500px] flex items-start lg:items-center justify-center mt-4 lg:mt-0">
             {/* Abstract Background */}
-            <div className="absolute inset-0 bg-indigo-50 rounded-[40px] transform rotate-3 scale-90 -z-10"></div>
+            <div className="absolute inset-0 bg-indigo-50 rounded-[40px] transform rotate-3 scale-90 -z-10 h-full"></div>
             
             {/* Stacked Cards UI Simulation */}
             <div className="relative w-full max-w-md mx-auto">
@@ -109,46 +151,6 @@ const PublishPreview: React.FC = () => {
               </div>
 
             </div>
-          </div>
-
-          <div className="order-1 lg:order-2">
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-6">
-              Publicar es así de simple.
-            </h2>
-            <p className="text-lg text-gray-600 mb-8">
-              Nuestro asistente inteligente te ayuda a categorizar, valorar y proteger tu activo en menos de 2 minutos.
-            </p>
-            
-            <div className="space-y-6">
-              <div className={`flex items-start transition-opacity duration-500 ${activeStep === 0 ? 'opacity-100' : 'opacity-40'}`}>
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold mr-4">1</div>
-                <div>
-                  <h4 className="font-bold text-gray-900">Categorización Instantánea</h4>
-                  <p className="text-gray-500 text-sm">Selecciona categoría y nombre. Nosotros hacemos el resto.</p>
-                </div>
-              </div>
-               <div className={`flex items-start transition-opacity duration-500 ${activeStep === 1 ? 'opacity-100' : 'opacity-40'}`}>
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold mr-4">2</div>
-                <div>
-                  <h4 className="font-bold text-gray-900">Registro Visual</h4>
-                  <p className="text-gray-500 text-sm">Sube fotos para garantizar el estado del producto antes de la renta.</p>
-                </div>
-              </div>
-               <div className={`flex items-start transition-opacity duration-500 ${activeStep === 2 ? 'opacity-100' : 'opacity-40'}`}>
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold mr-4">3</div>
-                <div>
-                  <h4 className="font-bold text-gray-900">Precio Sugerido</h4>
-                  <p className="text-gray-500 text-sm">Nuestro algoritmo te sugiere el mejor precio para rentar rápido.</p>
-                </div>
-              </div>
-            </div>
-
-            <button 
-              onClick={() => openWhatsApp("Hola, quiero probar el asistente de publicación de activos.")}
-              className="mt-10 px-8 py-3 bg-gray-900 text-white font-bold rounded-full hover:bg-gray-800 transition-colors"
-            >
-              Pruébalo ahora
-            </button>
           </div>
 
         </div>

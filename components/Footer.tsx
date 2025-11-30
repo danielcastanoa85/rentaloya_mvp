@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-gray-400 text-sm flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-left">
-            <span>© 2025 Rentaloya Bello. Hecho en Colombia.</span>
+            <span>© 2025 Rentaloya. Operando en Antioquia.</span>
           </div>
           <div className="flex space-x-6 text-gray-400">
             <a href="#" className="hover:text-indigo-600"><Facebook className="w-5 h-5" /></a>

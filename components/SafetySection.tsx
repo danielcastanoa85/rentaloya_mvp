@@ -11,7 +11,7 @@ const SafetySection: React.FC = () => {
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4">¿Quién usa tus cosas? Solo Vecinos Filtrados.</h2>
           <p className="text-indigo-200 max-w-2xl mx-auto text-lg">
-            En Bello la confianza se gana. Usamos tecnología biométrica. Si no pasan el filtro de seguridad, no entran al barrio Rentaloya.
+            La confianza es nuestra prioridad. Usamos tecnología biométrica avanzada. Si no pasan el filtro de seguridad, no pueden operar en Rentaloya.
           </p>
           <div className="mt-4">
             <a 

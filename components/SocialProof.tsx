@@ -30,8 +30,8 @@ const SocialProof: React.FC = () => {
           
           <div className="lg:w-1/3">
              <h2 className="text-3xl font-extrabold text-gray-900 mb-8">
-              Miles de Rentas Seguras, <br/>
-              <span className="text-indigo-600">Cerca de Ti.</span>
+              Comunidad Verificada en <br/>
+              <span className="text-indigo-600">Medellín y Alrededores.</span>
              </h2>
              
              <div className="space-y-6">
@@ -51,7 +51,7 @@ const SocialProof: React.FC = () => {
                  </div>
                  <div>
                    <h3 className="text-xl font-bold text-gray-900">Soporte Local</h3>
-                   <p className="text-gray-500 font-medium">Atención en Bello y Medellín</p>
+                   <p className="text-gray-500 font-medium">Cobertura en todo el Valle</p>
                  </div>
                </div>
 

@@ -15,11 +15,11 @@ const Hero: React.FC = () => {
             </div>
             
             <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 leading-[1.1] tracking-tight">
-              Rentaloya: La Plataforma Donde los Vecinos de <span className="text-indigo-600">Bello Arriendan Seguro.</span>
+              Rentaloya: Tu Red de Alquiler en el <span className="text-indigo-600">Valle de Aburrá.</span>
             </h1>
             
             <p className="text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Monetice ese taladro que no usa o arriende esa fachada en Niquía y Cabañas sin miedos ni compliques. Todo con garantía.
+              La plataforma inteligente para alquilar lo que necesitas o ganar dinero con lo que tienes. Cobertura en toda el Área Metropolitana.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">

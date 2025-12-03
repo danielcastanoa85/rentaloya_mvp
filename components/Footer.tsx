@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-white border-t border-gray-100 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           
           <div className="space-y-4">
             <a href="/" className="inline-block hover:opacity-90 transition-opacity">
@@ -34,27 +34,57 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold text-gray-900 mb-4">Soporte</h4>
             <ul className="space-y-2 text-sm text-gray-600">
-              <li><a href="#" className="hover:text-indigo-600">Centro de Ayuda</a></li>
-              <li><a href="#" className="hover:text-indigo-600">Políticas de Garantía</a></li>
-              <li><a href="https://tally.so/r/q45WQ5" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600">Verificar mi Identidad</a></li>
-              <li><a href="#" className="hover:text-indigo-600">Términos y Condiciones</a></li>
-              <li><a href="#" className="hover:text-indigo-600">Contacto</a></li>
+              <li>
+                <a 
+                  href="https://wa.me/573008840061" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-indigo-600"
+                >
+                  Centro de Ayuda
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://drive.google.com/file/d/1n1Qsw7csmN9Cp_muGqzO7M9uHWMYI4T5/view?usp=drive_link" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-indigo-600"
+                >
+                  Políticas de Garantía
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://tally.so/r/q45WQ5" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-indigo-600"
+                >
+                  Verificar mi Identidad
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://drive.google.com/file/d/1n1Qsw7csmN9Cp_muGqzO7M9uHWMYI4T5/view?usp=drive_link" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-indigo-600"
+                >
+                  Términos y Condiciones
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://wa.me/573008840061" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-indigo-600"
+                >
+                  Contacto
+                </a>
+              </li>
             </ul>
-          </div>
-
-          <div>
-            <h4 className="font-bold text-gray-900 mb-4">Newsletter</h4>
-            <p className="text-gray-500 text-sm mb-4">Recibe tips para ganar más dinero con tus activos.</p>
-            <div className="flex">
-              <input 
-                type="email" 
-                placeholder="Tu email" 
-                className="flex-1 bg-gray-50 border border-gray-200 rounded-l-lg px-3 py-2 text-sm focus:outline-none focus:border-indigo-500"
-              />
-              <button className="bg-indigo-600 text-white px-4 py-2 rounded-r-lg text-sm font-bold hover:bg-indigo-700">
-                Suscribir
-              </button>
-            </div>
           </div>
 
         </div>

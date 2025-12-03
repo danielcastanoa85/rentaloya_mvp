@@ -21,6 +21,11 @@ const categories = [
     title: "Parqueaderos",
     subtitle: "Garajes cubiertos y seguros",
     image: "https://images.unsplash.com/photo-1486006920555-c77dcf18193c?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    title: "Salud y Movilidad",
+    subtitle: "Sillas de ruedas, muletas y camas",
+    image: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80"
   }
 ];
 
@@ -49,7 +54,8 @@ const Categories: React.FC = () => {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Updated Grid for 5 items: Mobile 1, Tablet 2, Laptop 3, Desktop 5 */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {categories.map((cat, idx) => (
             <div key={idx} className="group relative rounded-3xl overflow-hidden cursor-pointer h-80 shadow-md hover:shadow-xl transition-all duration-300">
               <img 
